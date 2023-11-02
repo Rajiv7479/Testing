@@ -1,4 +1,4 @@
-import bcrypt from "bcryptjs";
+import bcrypt from "bcryptjs"; //for hashing the password
 
 const data = {
   users: [

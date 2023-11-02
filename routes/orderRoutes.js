@@ -13,6 +13,7 @@ orderRouter.get(
   isAdmin,
   expressAsyncHandler(async (req, res) => {
     const orders = await Order.find().populate("user", "name");
+    // console.log(orders);
     res.send(orders);
   })
 );
